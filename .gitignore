@@ -5,6 +5,10 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,venv,vscode
 
 
+# Code Editors
+.vscode/
+.vim/
+.idea/
 
 ### Python ###
 
