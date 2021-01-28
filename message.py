@@ -2,7 +2,7 @@ messages = {
     'welcome':
         u'Bienvenido a La Comunidad HackTzi, {name}!\n'
         u'¿Cuál carrera de tech estás haciendo y de dónde vienes? 😁🙌🏻'
-        u'Te invlitamos a consular las reglas y proyectos usando /reglas /proyectos',
+        u'Te invitamos a consular las reglas y proyectos usando /reglas /proyectos',
     'rules':
         u'Reglas\n'
         u'▪️Respetar a sus comapañeros\n'
