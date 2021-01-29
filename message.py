@@ -2,7 +2,8 @@ messages = {
     'welcome':
         u'Bienvenido a La Comunidad HackTzi, {name}!\n'
         u'¿Cuál carrera de tech estás haciendo y de dónde vienes? 😁🙌🏻\n\n'
-        u'Te invitamos a consular las reglas y proyectos usando /reglas /proyectos',
+        u'Te invitamos a consular las reglas y proyectos usando /reglas /proyectos\n\n'
+        u'Ingresa el server de discord de HackTzi: https://discord.gg/FVdZTryuXe',
     'rules':
         u'Reglas\n'
         u'▪️Respetar a sus comapañeros\n'
