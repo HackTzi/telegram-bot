@@ -15,8 +15,8 @@ if token is not None:
         last_name = user.get('last_name', None)
         if first_name is not None:
             name = first_name
-        elif last_name is not None:
-            name = f'{first_name} {last_name}'
+            if last_name is not None:
+                name = f'{first_name} {last_name}'
 
         bot.reply_to(message, messages['welcome'].format(name=name))
 
