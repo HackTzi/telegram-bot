@@ -42,5 +42,7 @@ messages = {
     'donations':
         u'Si quieres apoyar a la comunidad de forma monetaria, puedes donar por aquí:\n\n'
         u'Este método no está disponible para Latam\n'
-        u'https://paypal.me/pools/c/8wq4DXcLDI'
+        u'https://paypal.me/pools/c/8wq4DXcLDI',
+    'discord':
+        u'Ingresa el server de discord de HackTzi: https://discord.gg/FVdZTryuXe',
 }

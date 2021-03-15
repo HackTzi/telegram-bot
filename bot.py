@@ -37,6 +37,10 @@ if token is not None:
     def donations(message):
         bot.reply_to(message, messages['donations'])
 
+    @bot.message_handler(commands=['discord'])
+    def discord(message):
+        bot.reply_to(message, messages['discord'])
+
 
     bot.polling()
 else:
