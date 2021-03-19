@@ -45,4 +45,7 @@ messages = {
         u'https://paypal.me/pools/c/8wq4DXcLDI',
     'discord':
         u'Ingresa el server de discord de HackTzi: https://discord.gg/HhPxWPAW',
+    'bug':
+        u'418 I\'m a teapot'
+'
 }
