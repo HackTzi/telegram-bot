@@ -41,6 +41,10 @@ if token is not None:
     def discord(message):
         bot.reply_to(message, messages['discord'])
 
+    @bot.message_handler(commands=['bug', 'error'])
+    def bug(message):
+        bot.reply_to(message, messages['bug'])
+
 
     bot.polling()
 else:
