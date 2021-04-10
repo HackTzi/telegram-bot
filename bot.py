@@ -6,7 +6,7 @@ token = os.environ.get('token', None)
 
 if token is not None:
     bot = telebot.TeleBot(token, parse_mode=None)
-
+    DISCORD_LINK = 'https://discord.gg/ujPH5pWj'
 
     @bot.message_handler(func=lambda message: True, content_types=['new_chat_members'])
     def on_user_joins(message):
@@ -18,7 +18,7 @@ if token is not None:
             if last_name is not None:
                 name = f'{first_name} {last_name}'
 
-        bot.reply_to(message, messages['welcome'].format(name=name))
+        bot.reply_to(message, messages['welcome'].format(name=name, discord=DISCORD_LINK))
 
 
     @bot.message_handler(commands=['reglas', 'rules'])
@@ -39,7 +39,7 @@ if token is not None:
 
     @bot.message_handler(commands=['discord'])
     def discord(message):
-        bot.reply_to(message, messages['discord'])
+        bot.reply_to(message, messages['discord'].format(discord=DISCORD_LINK))
 
     @bot.message_handler(commands=['bug', 'error'])
     def bug(message):

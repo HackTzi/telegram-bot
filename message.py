@@ -1,11 +1,9 @@
-DISCORD_LINK = 'https://discord.gg/ujPH5pWj'
-
 messages = {
     'welcome':
         u'Bienvenido a La Comunidad HackTzi, {name}!\n'
         u'¿Cuál carrera de tech estás haciendo y de dónde vienes? 😁🙌🏻\n\n'
         u'Te invitamos a consular las reglas y proyectos usando /reglas /proyectos\n\n'
-        u'Ingresa el server de discord de HackTzi: {discord}'.format(discord=DISCORD_LINK),
+        u'Ingresa el server de discord de HackTzi: {discord}',
     'rules':
         u'Reglas\n'
         u'▪️Respetar a sus comapañeros\n'
@@ -46,7 +44,7 @@ messages = {
         u'Este método no está disponible para Latam\n'
         u'https://paypal.me/pools/c/8wq4DXcLDI',
     'discord':
-        u'Ingresa el server de discord de HackTzi: {discord}'.format(discord=DISCORD_LINK),
+        u'Ingresa el server de discord de HackTzi: {discord}',
     'bug':
         u'418 I\'m a teapot',
         }
