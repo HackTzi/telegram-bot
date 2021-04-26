@@ -1,5 +1,6 @@
 import os
 import telebot
+import random
 from message import messages
 
 token = os.environ.get('token', None)
@@ -45,6 +46,10 @@ if token is not None:
     def bug(message):
         bot.reply_to(message, messages['bug'])
 
+    @bot.message_handler(commands=['HelloWorld', 'HolaMundo'])
+    def hello_world(message):
+        random_hello_world = random.choice(messages['hello_world'])
+        bot.reply_to(message, f'`{random_hello_world}`', parse_mode='Markdown')
 
     bot.polling()
 else:
