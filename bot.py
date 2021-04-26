@@ -46,7 +46,7 @@ if token is not None:
     def bug(message):
         bot.reply_to(message, messages['bug'])
 
-    @bot.message_handler(commands=['HelloWorld', 'HolaMundo'])
+    @bot.message_handler(commands=['HelloWorld', 'HolaMundo', 'CiaoMondo'])
     def hello_world(message):
         random_hello_world = random.choice(messages['hello_world'])
         bot.reply_to(message, f'`{random_hello_world}`', parse_mode='Markdown')
