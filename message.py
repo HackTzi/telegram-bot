@@ -172,4 +172,16 @@ messages = {
     'bug':
         u'418 I\'m a teapot',
     'hello_world': hello_word_different_languages,
+    'call':
+        u'Estamos buscando un nuevo integrante para el staff de HackTzi \n\n'
+        u'Requisitos: \n'
+        u'- Conocimiento sobre programas de edición de video y diseño gráfico.\n'
+        u'- Ser creativo(a)\n'
+        u'- Ser proactivo(a)\n'
+        u'- Tener iniciativa\n\n'
+        u'Funciones: \n'
+        u'- Realización de piezas gráficas y animadas \n\n'
+        u'Beneficios: \n'
+        u'- Ser parte de un equipo multidisciplinario \n'
+        u'- Formar parte de la dirección de los proyectos que se realiza en la comunidad.',
 }

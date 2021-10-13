@@ -3,11 +3,11 @@ import telebot
 import random
 from message import messages
 
-token = os.environ.get('token', None)
+token = os.environ.get('TELEGRAM_TOKEN', None)
 
 if token is not None:
     bot = telebot.TeleBot(token, parse_mode=None)
-    DISCORD_LINK = 'https://discord.gg/ujPH5pWj'
+    DISCORD_LINK = os.environ.get('DISCORD_LINK', 'Comunicate con el staff para que de te el link, crack!')
 
     @bot.message_handler(func=lambda message: True, content_types=['new_chat_members'])
     def on_user_joins(message):
@@ -50,6 +50,10 @@ if token is not None:
     def hello_world(message):
         random_hello_world = random.choice(messages['hello_world'])
         bot.reply_to(message, f'`{random_hello_world}`', parse_mode='Markdown')
+
+    @bot.message_handler(commands=['convocatoria', 'call'])
+    def call(message):
+        bot.reply_to(message, messages['call'])
 
     bot.polling()
 else:
